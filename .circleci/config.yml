@@ -14,6 +14,6 @@ jobs:
 
       - run: |
           TAG=0.1.$CIRCLE_BUILD_NUM
-          docker build -t vparkhomchuk/circleci-demo-docker:$TAG .
+          docker build -t vparkhomchuk/lesson3:$TAG .
           docker login -u vparkhomchuk -p $DOCKERHUB_PASSWORD
-          docker push vparkhomchuk/circleci-demo-docker:$TAG
+          docker push vparkhomchuk/lesson3:$TAG
